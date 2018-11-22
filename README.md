@@ -1,0 +1,8 @@
+# only_my_railgun
+这个工程是上课点名系统的基本原型，这里尝试使用了开源库face_Recognition，完成了主要的人脸检测和识别的功能
+
+这里详细说明一下个人对face_recognition的了解
+face_recognition是使用了DLIB的人脸识别进行构筑，提供了方便的人脸检测和识别功能
+face_count.py中主要调用了face_locations的方法，进行人脸位置的标注并记录了其人脸识别的个数。作为功能一：大致获得教室人数然后判断是否需要点名
+face_load.py中主要调用了face_encodings的方法，进行人脸的编码。这里主要是进行人脸的录入，提供了现场拍摄的方法。face_locations方法在这里主要进行的d
+是人脸的标定
